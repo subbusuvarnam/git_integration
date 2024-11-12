@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="7453528ac3719210087838bc05013129" label="New_table" max_length="40" name="x_snc_git_intergra_new_table" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Item" mandatory="true" max_length="40" name="item" type="string"/>
+        <element attributes="encode_utf8=false" label="Requested by" mandatory="true" max_length="32" name="requested_by" reference="sys_user" type="reference"/>
+        <index name="index">
+            <element name="requested_by"/>
+        </index>
+    </element>
+</database>
